@@ -1,4 +1,4 @@
-FROM debezium/base
+FROM uiterlix/debezium-base
 
 LABEL maintainer="Debezium Community"
 

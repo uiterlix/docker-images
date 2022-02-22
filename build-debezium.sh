@@ -27,12 +27,12 @@ build_docker_image () {
     echo "** Validating  debezium/${IMAGE_NAME}"
     echo "****************************************************************"
     echo ""
-    docker run --rm -i hadolint/hadolint:latest < "${IMAGE_PATH}"
+#    docker run --rm -i hadolint/hadolint:latest < "${IMAGE_PATH}"
 
     echo "****************************************************************"
     echo "** Building    debezium/${IMAGE_NAME}:${IMAGE_TAG}"
     echo "****************************************************************"
-    docker build -t "debezium/${IMAGE_NAME}:latest" "${IMAGE_PATH}"
+    docker build -t "uiterlix/debezium-${IMAGE_NAME}:latest" "${IMAGE_PATH}"
 
     if [ -z "$RELEASE_TAG" ]; then
         echo "****************************************************************"

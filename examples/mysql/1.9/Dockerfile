@@ -1,4 +1,4 @@
-FROM mysql:8.0
+FROM uiterlix/mysql-server:8.0
 
 LABEL maintainer="Debezium Community"
 
